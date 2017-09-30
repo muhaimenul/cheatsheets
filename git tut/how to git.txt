@@ -1,0 +1,8 @@
+1. create repository
+2. git clone clone-link
+3. copy project to the clonned repository
+4. git add . or git add -A
+5. git commit -m "Give a token to remember"
+6. git push -u origin master
+7. git remote add origin clone-link
+8. username password
