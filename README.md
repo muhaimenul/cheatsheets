@@ -1,2 +1,2 @@
-# new_git_acc
+# New Git Account
 First git repository for testing.
