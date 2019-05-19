@@ -10,12 +10,14 @@ Basic initial git commands:
 7. git push -u origin master
 8. username password
 
+
 ---------------------------------------------------
 See or change origin:
 ---------------------------------------------------
 git remote -v
 git remote add origin <url>
 git remote set-url origin <url>
+
 
 ---------------------------------------------------
 All about branch:
@@ -25,6 +27,7 @@ git branch <name>         //create branch
 git checkout <name>       //switch branch
 git checkout -b <name>    //create and switch branch
 git merge <branch>        //merge branch from master
+
 
 ---------------------------------------------------
 Replace user info of git commit:
