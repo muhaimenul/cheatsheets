@@ -20,6 +20,19 @@ git remote set-url origin <url>
 
 
 ---------------------------------------------------
+To see Git Info:
+---------------------------------------------------
+git remote get-url origin
+git config user.name
+git config user.email
+
+---------------------------------------------------
+Pull-Push or Merge Related:
+---------------------------------------------------
+git pull --allow-unrelated-histories
+
+
+---------------------------------------------------
 All about branch:
 ---------------------------------------------------
 git branch                //branch list
