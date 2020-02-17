@@ -27,6 +27,18 @@ git config user.name
 git config user.email
 
 ---------------------------------------------------
+Stage or Commit Related:
+---------------------------------------------------
+git show --summary                                //see last Commit
+git reset --soft HEAD~1                           //undo last commit
+git reset --hard 0ad5a7a6 or git checkout <sha1>  //return to specific commit
+git stash                                         //hide you changes without commit
+git stash list                                    //see your list with hidden changes
+git stash apply                                   //apply your last changes from stash list
+git stash drop stash@{0}                          //remove from stash list
+git stash pop stash@{1}                           //apply choosed stash and drop it from stash list
+
+---------------------------------------------------
 Pull-Push or Merge Related:
 ---------------------------------------------------
 git pull --allow-unrelated-histories
