@@ -52,6 +52,10 @@ git branch <name>         //create branch
 git checkout <name>       //switch branch
 git checkout -b <name>    //create and switch branch
 git merge <branch>        //merge branch from master
+git branch -d <branch>    // delete local branch (-D for force delete)
+git push origin --delete <branch> //delete remote branch
+
+
 
 
 ---------------------------------------------------
