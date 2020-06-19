@@ -54,6 +54,9 @@ git checkout -b <name>    //create and switch branch
 git merge <branch>        //merge branch from master
 git branch -d <branch>    // delete local branch (-D for force delete)
 git push origin --delete <branch> //delete remote branch
+git merge local_branch    // merge current branch with local_branch
+git pull . local_branch   // merge current branch with local_branch
+
 
 
 
