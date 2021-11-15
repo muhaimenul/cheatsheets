@@ -1,6 +1,6 @@
 # Git Cheatsheet
 
-[![N|Solid](https://w7.pngwing.com/pngs/668/770/png-transparent-git-repository-version-control-commit-apache-subversion-github-angle-git-repository-thumbnail.png)](miobyte.com/muhaimenul/)
+[![N|Solid](https://icon-library.com/images/git-icon/git-icon-18.jpg)](www.linkedin.com/in/muhaimenul/)
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://miobyte.com/muhaimenul)
 
@@ -15,6 +15,14 @@
 6. git remote add origin clone-link
 7. git push -u origin master
 8. username password
+
+
+### Edit global git config:
+
+```sh
+git config --edit --global
+```
+
 
 
 ### See or change origin:
