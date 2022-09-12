@@ -17,12 +17,20 @@
 8. username password
 
 
-### Edit global git config:
+### Edit git config:
 
 ```sh
-git config --edit --global
+git config --edit --global                      # edit global config
+git config core.fileMode false                  # ignore file permission
 ```
 
+### See Git Info:
+
+```sh
+git remote get-url origin
+git config user.name
+git config user.email
+```
 
 
 ### See or change origin:
@@ -32,15 +40,6 @@ git remote -v
 git remote add origin <url>
 git remote add origin <url>
 ```
-
-### To see Git Info:
-
-```sh
-git remote get-url origin
-git config user.name
-git config user.email
-```
-
 
 ### Stage or Commit Related:
 
@@ -53,6 +52,13 @@ git stash list                                    # see your list with hidden ch
 git stash apply                                   # apply your last changes from stash list
 git stash drop stash@{0}                          # remove from stash list
 git stash pop stash@{1}                           # apply choosed stash and drop it from stash list
+```
+
+### See history:
+```sh
+git log
+git log --since='2 weeks ago'                     # for specific time
+git whatchanged
 ```
 
 ### Pull-Push or Merge Related:
