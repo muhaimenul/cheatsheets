@@ -20,8 +20,8 @@
 ### Edit git config:
 
 ```sh
-git config --edit --global                      # edit global config
-git config core.fileMode false                  # ignore file permission
+git config --edit --global                        # edit global config
+git config core.fileMode false                    # ignore file permission
 ```
 
 ### See Git Info:
@@ -55,10 +55,16 @@ git stash pop stash@{1}                           # apply choosed stash and drop
 ```
 
 ### See history:
+
 ```sh
 git log
 git log --since='2 weeks ago'                     # for specific time
-git whatchanged
+git whatchanged                                   # log with list of files
+```
+
+```sh
+git blame filename.ext                            # see file modifier
+git blame filename.ext -L 1,5                     # see file modifier within lines
 ```
 
 ### Pull-Push or Merge Related:
@@ -67,18 +73,29 @@ git whatchanged
 git pull --allow-unrelated-histories
 ```
 
+```sh
+git reflog                                        # undo a git pull
+git reset --hard <VERSION_ID>                     # undo to a specific commit
+git reset --hard master@{"30 minutes ago"}        # undo to a specific time
+```
+
+```sh
+git status                                        # track changes
+git diff --stat                                   # see the number of lines changed
+```
+
 ### All about branch:
 
 ```sh
-git branch                //branch list
-git branch <name>         //create branch 
-git checkout <name>       //switch branch
-git checkout -b <name>    //create and switch branch
-git merge <branch>        //merge branch from master
-git branch -d <branch>    // delete local branch (-D for force delete)
-git push origin --delete <branch> //delete remote branch
-git merge local_branch    // merge current branch with local_branch
-git pull . local_branch   // merge current branch with local_branch
+git branch                                        # branch list
+git branch <name>                                 # create branch 
+git checkout <name>                               # switch branch
+git checkout -b <name>                            # create and switch branch
+git merge <branch>                                # merge branch from master
+git branch -d <branch>                            # delete local branch (-D for force delete)
+git push origin --delete <branch>                 # delete remote branch
+git merge local_branch                            # merge current branch with local_branch
+git pull . local_branch                           # merge current branch with local_branch
 ```
 
 ### Replace user info of git commit:
@@ -93,6 +110,6 @@ git filter-branch -f --env-filter "
 ```
 
 
-#### Git cheat sheet:
-
-https://medium.freecodecamp.org/git-cheat-sheet-and-best-practices-c6ce5321f52
+#### References:
+- https://docs.github.com/en/get-started/using-git/about-git
+- https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html
